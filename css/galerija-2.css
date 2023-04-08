@@ -1,0 +1,70 @@
+div.galerija {
+    margin: 5px;
+    border: 1px rgb(93, 178, 165, 0.2) solid;
+    border-radius: 5px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+div.galerija:hover {
+    border: 3px solid #5db2a5;
+    border-radius: 5px;
+}
+
+div.galerija img {
+    width: 180px;
+    height: auto;
+}
+
+div.opis {
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/* CSS rules for phones */
+
+@media only screen and (max-width:480px) {
+    .galerija-okvir {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .galerija-red-okvir {
+        flex-direction: column;
+        width: min-content;
+    }
+}
+
+
+/* CSS rules for tablets */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .galerija-okvir {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .galerija-red-okvir {
+        flex-direction: row;
+        width: min-content;
+    }
+}
+
+
+/* CSS rules for desktops */
+
+@media only screen and (min-width: 769px) {
+    .galerija-okvir {
+        display: flex;
+        align-items: center;
+        margin-top: 1.5%;
+    }
+    .galerija-red-okvir {
+        flex-direction: row;
+    }
+}

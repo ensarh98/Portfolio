@@ -1,0 +1,139 @@
+.main-okvir {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.okvir {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.vertikalni-meni-stavka {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #333333;
+}
+
+.pocetna-okvir {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pocetna-slika-opis {
+    text-align: center;
+    font-style: italic;
+}
+
+.detalj {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.detalj span {
+    color: #333333;
+}
+
+.labela-boja {
+    color: #5db2a5 !important;
+}
+
+#sadrzaj {
+    text-align: justify;
+}
+
+.obrazovanje-opis {
+    border-top: 0.5px #333333 solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.labela-opis {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.grupa-vjestine {
+    margin-bottom: 10px;
+    padding: 5px
+}
+
+.stavka-vjestine {
+    margin-bottom: 10px;
+}
+
+.vjestine-ikonica {
+    margin-right: 8px;
+}
+
+.projekat-naslov {
+    padding: 10px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.kontakt-okvir {
+    display: flex;
+    justify-content: center;
+}
+
+.kontakt-forma {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.kontakt-dugme {
+    float: right;
+}
+
+
+/* CSS rules for phones */
+
+@media only screen and (max-width:480px) {
+    .vertikalni-meni-labela {
+        display: none;
+    }
+    #pocetna-slika {
+        width: 65%;
+    }
+    .kontakt-forma {
+        width: 100%;
+    }
+}
+
+
+/* CSS rules for tablets */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .vertikalni-meni-labela {
+        display: none;
+    }
+    #pocetna-slika {
+        width: 65%;
+    }
+    .kontakt-forma {
+        width: 100%;
+    }
+}
+
+
+/* CSS rules for desktops */
+
+@media only screen and (min-width: 769px) {
+    ul li .vertikalni-meni-stavka span {
+        margin-right: 15px;
+    }
+    #pocetna-slika {
+        width: 85%;
+    }
+    .kontakt-forma {
+        width: 70%;
+    }
+}

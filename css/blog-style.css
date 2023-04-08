@@ -1,0 +1,69 @@
+.naslov-okvir {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.naslov-labela {
+    width: fit-content;
+    margin-right: 10px;
+}
+
+.blog-stavka {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.blog-istaknuto {
+    padding: 20px;
+    text-align: justify;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+/* CSS rules for phones */
+
+@media only screen and (max-width:480px) {
+    .blog-stavka {
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-stavka-slika {
+        width: 100%;
+        margin-right: 10px;
+    }
+}
+
+
+/* CSS rules for tablets */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .blog-stavka {
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-stavka-slika {
+        width: 100%;
+        margin-right: 10px;
+    }
+}
+
+.blog-opis {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+
+/* CSS rules for desktops */
+
+@media only screen and (min-width: 769px) {
+    .blog-stavka {
+        display: flex;
+        flex-direction: row;
+    }
+    .blog-stavka-slika {
+        width: 20%;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,231 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
+}
+
+main {
+    min-height: 560px;
+}
+
+.header-slika-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+a.header-slika-link:hover {
+    text-decoration-line: none;
+}
+
+nav {
+    background-color: #5db2a5;
+}
+
+nav dl {
+    display: flex;
+}
+
+#ime {
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.header-link {
+    color: white;
+    text-decoration: none;
+    width: max-content;
+}
+
+a.header-link:hover {
+    text-decoration-line: underline;
+    font-size: 18px;
+    color: #333333
+}
+
+.socijalna-mreza-ikonica {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+footer {
+    border-top: 5px #5db2a5 solid;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-link {
+    text-decoration: auto;
+}
+
+#footer-vrati-na-pocetak {
+    color: #333333;
+    text-decoration: none;
+}
+
+.glyphicon {
+    font-size: 18px;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    color: white;
+    background-color: #5db2a5;
+}
+
+.nav-pills>li>a:hover {
+    color: #333333
+}
+
+figure {
+    text-align-last: center;
+}
+
+.bg-info {
+    background-color: rgb(93, 178, 165, 0.2)
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid rgb(93, 178, 165, 0.2);
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(93, 178, 165, 0.2);
+}
+
+caption {
+    text-align: center;
+}
+
+aside {
+    font-size: 12px;
+}
+
+a.external-link:visited {
+    color: red !important;
+}
+
+
+/* CSS rules for phones */
+
+@media only screen and (max-width:480px) {
+    header {
+        width: 100%;
+        top: 0;
+        height: 0.2vh;
+    }
+    dl {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        padding: 10px 0px 0px 0px;
+    }
+    nav dl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        margin-top: 215px;
+        margin-bottom: 100px;
+    }
+    .drustvene-mreze-linkovi {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-vrati-na-pocetak {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* CSS rules for tablets */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    header {
+        width: 100%;
+        top: 0;
+        height: 0.2vh;
+    }
+    dl {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        padding: 10px 0px 0px 0px;
+    }
+    nav dl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav dt {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    main {
+        margin-top: 215px;
+        margin-bottom: 100px;
+    }
+    .drustvene-mreze-linkovi {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-vrati-na-pocetak {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* CSS rules for desktops */
+
+@media only screen and (min-width: 769px) {
+    header {
+        width: 100%;
+        top: 0;
+        height: 9.4vh;
+    }
+    dl {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        padding: 20px 40px 20px 0px;
+    }
+    nav dt {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+    }
+    .header-slika {
+        width: 100%;
+        justify-content: left;
+        cursor: pointer;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+    .drustvene-mreze-linkovi {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .footer-vrati-na-pocetak {
+        align-self: center;
+    }
+}
